@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "apu_failures",
+  "doc" : "Sqoop import of apu_failures",
+  "fields" : [ {
+    "name" : "event_id",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "event_id",
+    "sqlType" : "4"
+  }, {
+    "name" : "start_time",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "start_time",
+    "sqlType" : "93"
+  }, {
+    "name" : "end_time",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "end_time",
+    "sqlType" : "93"
+  }, {
+    "name" : "duration_minutes",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "duration_minutes",
+    "sqlType" : "4"
+  }, {
+    "name" : "severity",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "severity",
+    "sqlType" : "12"
+  } ],
+  "tableName" : "apu_failures"
+}

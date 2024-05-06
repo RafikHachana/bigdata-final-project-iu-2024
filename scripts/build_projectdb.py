@@ -30,11 +30,15 @@ with psql.connect(CONN_STRING) as conn:
 
     # Read the commands from the file and execute them.
     with open(os.path.join("sql", "import_data.sql"), mode='r', encoding='UTF-8') as file:
-        command= file.read()
-        print(command)
-        for file_path in glob.glob('data/*.csv'):
+        sensor_readings_cmd, apu_failures_cmd = file.readlines()
+
+        # Write sensor readings
+        for file_path in glob.glob('data/sensor_readings.*.csv'):
             with open(file_path, "r", encoding='UTF-8') as data:
-                cur.copy_expert(command, data)
+                cur.copy_expert(sensor_readings_cmd, data)
+        # Write APU failures
+        with open("data/apu_failures.csv", "r", encoding='UTF-8') as data:
+            cur.copy_expert(apu_failures_cmd, data)
 
     conn.commit()
 
@@ -42,8 +46,9 @@ with psql.connect(CONN_STRING) as conn:
     cur = conn.cursor()
     # Read the sql commands from the file
     with open(os.path.join("sql", "test_database.sql"), mode='r', encoding='UTF-8') as file:
-        command = file.read()
-        print(command)
-        cur.execute(command)
-        # Read all records and print them
-        pprint(cur.fetchall())
+        commands = file.readlines()
+        for command in commands:
+            print(command)
+            cur.execute(command)
+            # Read all records and print them
+            pprint(cur.fetchall())

@@ -32,7 +32,7 @@ def split_csv(input_file, max_file_size_mb=90, chunk_size=10000):
 
         # If the size exceeds the threshold, write to a new CSV
         if size_in_mb >= max_file_size_mb:
-            output_file = f'../data/dataset.part{current_part}.csv'
+            output_file = f'data/sensor_readings.part{current_part}.csv'
             df_accumulated.to_csv(output_file, index=False)
             print(f'Written {output_file} of size {size_in_mb:.2f} MB')
 
@@ -42,9 +42,9 @@ def split_csv(input_file, max_file_size_mb=90, chunk_size=10000):
 
     # Check if there is any remaining data to write after the loop
     if not df_accumulated.empty:
-        output_file = f'../data/dataset.part{current_part}.csv'
+        output_file = f'data/sensor_readings.part{current_part}.csv'
         df_accumulated.to_csv(output_file, index=False)
         print(f'Written {output_file} of size {size_in_mb:.2f} MB')
 
 # Usage
-split_csv('../data/MetroPT3.csv')
+split_csv('data/MetroPT3.csv')

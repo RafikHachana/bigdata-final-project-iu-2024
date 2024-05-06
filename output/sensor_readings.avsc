@@ -1,7 +1,7 @@
 {
   "type" : "record",
-  "name" : "dataset",
-  "doc" : "Sqoop import of dataset",
+  "name" : "sensor_readings",
+  "doc" : "Sqoop import of sensor_readings",
   "fields" : [ {
     "name" : "index",
     "type" : [ "null", "int" ],
@@ -105,5 +105,5 @@
     "columnName" : "caudal_impulses",
     "sqlType" : "8"
   } ],
-  "tableName" : "dataset"
+  "tableName" : "sensor_readings"
 }

@@ -1,8 +1,8 @@
-// ORM class for table 'dataset'
+// ORM class for table 'sensor_readings'
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
-// Generated date: Mon May 06 12:43:31 MSK 2024
+// Generated date: Mon May 06 20:51:40 MSK 2024
 // For connector: org.apache.sqoop.manager.PostgresqlManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
-public class dataset extends SqoopRecord  implements DBWritable, Writable {
+public class sensor_readings extends SqoopRecord  implements DBWritable, Writable {
   private final int PROTOCOL_VERSION = 3;
   public int getClassFormatVersion() { return PROTOCOL_VERSION; }
   public static interface FieldSetterCommand {    void setField(Object value);  }  protected ResultSet __cur_result_set;
@@ -43,107 +43,107 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
     setters.put("index", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.index = (Integer)value;
+        sensor_readings.this.index = (Integer)value;
       }
     });
     setters.put("timestamp", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.timestamp = (String)value;
+        sensor_readings.this.timestamp = (String)value;
       }
     });
     setters.put("tp2", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.tp2 = (Double)value;
+        sensor_readings.this.tp2 = (Double)value;
       }
     });
     setters.put("tp3", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.tp3 = (Double)value;
+        sensor_readings.this.tp3 = (Double)value;
       }
     });
     setters.put("h1", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.h1 = (Double)value;
+        sensor_readings.this.h1 = (Double)value;
       }
     });
     setters.put("dv_pressure", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.dv_pressure = (Double)value;
+        sensor_readings.this.dv_pressure = (Double)value;
       }
     });
     setters.put("reservoirs", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.reservoirs = (Double)value;
+        sensor_readings.this.reservoirs = (Double)value;
       }
     });
     setters.put("oil_temperature", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.oil_temperature = (Double)value;
+        sensor_readings.this.oil_temperature = (Double)value;
       }
     });
     setters.put("motor_current", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.motor_current = (Double)value;
+        sensor_readings.this.motor_current = (Double)value;
       }
     });
     setters.put("comp", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.comp = (Double)value;
+        sensor_readings.this.comp = (Double)value;
       }
     });
     setters.put("dv_eletric", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.dv_eletric = (Double)value;
+        sensor_readings.this.dv_eletric = (Double)value;
       }
     });
     setters.put("towers", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.towers = (Double)value;
+        sensor_readings.this.towers = (Double)value;
       }
     });
     setters.put("mpg", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.mpg = (Double)value;
+        sensor_readings.this.mpg = (Double)value;
       }
     });
     setters.put("lps", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.lps = (Double)value;
+        sensor_readings.this.lps = (Double)value;
       }
     });
     setters.put("pressure_switch", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.pressure_switch = (Double)value;
+        sensor_readings.this.pressure_switch = (Double)value;
       }
     });
     setters.put("oil_level", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.oil_level = (Double)value;
+        sensor_readings.this.oil_level = (Double)value;
       }
     });
     setters.put("caudal_impulses", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
-        dataset.this.caudal_impulses = (Double)value;
+        sensor_readings.this.caudal_impulses = (Double)value;
       }
     });
   }
-  public dataset() {
+  public sensor_readings() {
     init0();
   }
   private Integer index;
@@ -153,7 +153,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_index(Integer index) {
     this.index = index;
   }
-  public dataset with_index(Integer index) {
+  public sensor_readings with_index(Integer index) {
     this.index = index;
     return this;
   }
@@ -164,7 +164,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_timestamp(String timestamp) {
     this.timestamp = timestamp;
   }
-  public dataset with_timestamp(String timestamp) {
+  public sensor_readings with_timestamp(String timestamp) {
     this.timestamp = timestamp;
     return this;
   }
@@ -175,7 +175,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_tp2(Double tp2) {
     this.tp2 = tp2;
   }
-  public dataset with_tp2(Double tp2) {
+  public sensor_readings with_tp2(Double tp2) {
     this.tp2 = tp2;
     return this;
   }
@@ -186,7 +186,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_tp3(Double tp3) {
     this.tp3 = tp3;
   }
-  public dataset with_tp3(Double tp3) {
+  public sensor_readings with_tp3(Double tp3) {
     this.tp3 = tp3;
     return this;
   }
@@ -197,7 +197,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_h1(Double h1) {
     this.h1 = h1;
   }
-  public dataset with_h1(Double h1) {
+  public sensor_readings with_h1(Double h1) {
     this.h1 = h1;
     return this;
   }
@@ -208,7 +208,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_dv_pressure(Double dv_pressure) {
     this.dv_pressure = dv_pressure;
   }
-  public dataset with_dv_pressure(Double dv_pressure) {
+  public sensor_readings with_dv_pressure(Double dv_pressure) {
     this.dv_pressure = dv_pressure;
     return this;
   }
@@ -219,7 +219,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_reservoirs(Double reservoirs) {
     this.reservoirs = reservoirs;
   }
-  public dataset with_reservoirs(Double reservoirs) {
+  public sensor_readings with_reservoirs(Double reservoirs) {
     this.reservoirs = reservoirs;
     return this;
   }
@@ -230,7 +230,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_oil_temperature(Double oil_temperature) {
     this.oil_temperature = oil_temperature;
   }
-  public dataset with_oil_temperature(Double oil_temperature) {
+  public sensor_readings with_oil_temperature(Double oil_temperature) {
     this.oil_temperature = oil_temperature;
     return this;
   }
@@ -241,7 +241,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_motor_current(Double motor_current) {
     this.motor_current = motor_current;
   }
-  public dataset with_motor_current(Double motor_current) {
+  public sensor_readings with_motor_current(Double motor_current) {
     this.motor_current = motor_current;
     return this;
   }
@@ -252,7 +252,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_comp(Double comp) {
     this.comp = comp;
   }
-  public dataset with_comp(Double comp) {
+  public sensor_readings with_comp(Double comp) {
     this.comp = comp;
     return this;
   }
@@ -263,7 +263,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_dv_eletric(Double dv_eletric) {
     this.dv_eletric = dv_eletric;
   }
-  public dataset with_dv_eletric(Double dv_eletric) {
+  public sensor_readings with_dv_eletric(Double dv_eletric) {
     this.dv_eletric = dv_eletric;
     return this;
   }
@@ -274,7 +274,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_towers(Double towers) {
     this.towers = towers;
   }
-  public dataset with_towers(Double towers) {
+  public sensor_readings with_towers(Double towers) {
     this.towers = towers;
     return this;
   }
@@ -285,7 +285,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_mpg(Double mpg) {
     this.mpg = mpg;
   }
-  public dataset with_mpg(Double mpg) {
+  public sensor_readings with_mpg(Double mpg) {
     this.mpg = mpg;
     return this;
   }
@@ -296,7 +296,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_lps(Double lps) {
     this.lps = lps;
   }
-  public dataset with_lps(Double lps) {
+  public sensor_readings with_lps(Double lps) {
     this.lps = lps;
     return this;
   }
@@ -307,7 +307,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_pressure_switch(Double pressure_switch) {
     this.pressure_switch = pressure_switch;
   }
-  public dataset with_pressure_switch(Double pressure_switch) {
+  public sensor_readings with_pressure_switch(Double pressure_switch) {
     this.pressure_switch = pressure_switch;
     return this;
   }
@@ -318,7 +318,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_oil_level(Double oil_level) {
     this.oil_level = oil_level;
   }
-  public dataset with_oil_level(Double oil_level) {
+  public sensor_readings with_oil_level(Double oil_level) {
     this.oil_level = oil_level;
     return this;
   }
@@ -329,7 +329,7 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
   public void set_caudal_impulses(Double caudal_impulses) {
     this.caudal_impulses = caudal_impulses;
   }
-  public dataset with_caudal_impulses(Double caudal_impulses) {
+  public sensor_readings with_caudal_impulses(Double caudal_impulses) {
     this.caudal_impulses = caudal_impulses;
     return this;
   }
@@ -337,10 +337,10 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof dataset)) {
+    if (!(o instanceof sensor_readings)) {
       return false;
     }
-    dataset that = (dataset) o;
+    sensor_readings that = (sensor_readings) o;
     boolean equal = true;
     equal = equal && (this.index == null ? that.index == null : this.index.equals(that.index));
     equal = equal && (this.timestamp == null ? that.timestamp == null : this.timestamp.equals(that.timestamp));
@@ -365,10 +365,10 @@ public class dataset extends SqoopRecord  implements DBWritable, Writable {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof dataset)) {
+    if (!(o instanceof sensor_readings)) {
       return false;
     }
-    dataset that = (dataset) o;
+    sensor_readings that = (sensor_readings) o;
     boolean equal = true;
     equal = equal && (this.index == null ? that.index == null : this.index.equals(that.index));
     equal = equal && (this.timestamp == null ? that.timestamp == null : this.timestamp.equals(that.timestamp));
@@ -1228,11 +1228,11 @@ this.readFields0(__dataIn);  }
     } catch (RuntimeException e) {    throw new RuntimeException("Can't parse input data: '" + __cur_str + "'", e);    }  }
 
   public Object clone() throws CloneNotSupportedException {
-    dataset o = (dataset) super.clone();
+    sensor_readings o = (sensor_readings) super.clone();
     return o;
   }
 
-  public void clone0(dataset o) throws CloneNotSupportedException {
+  public void clone0(sensor_readings o) throws CloneNotSupportedException {
   }
 
   public Map<String, Object> getFieldMap() {

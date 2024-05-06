@@ -1,9 +1,11 @@
 START TRANSACTION;
 
+DROP TABLE IF EXISTS sensor_readings;
 DROP TABLE IF EXISTS dataset;
+DROP TABLE IF EXISTS apu_failures;
 
 
-CREATE TABLE dataset (
+CREATE TABLE sensor_readings (
     index INTEGER PRIMARY KEY,
     timestamp TEXT NOT NULL,
     TP2 DOUBLE PRECISION NOT NULL,
@@ -22,6 +24,15 @@ CREATE TABLE dataset (
     Oil_level DOUBLE PRECISION NOT NULL,
     Caudal_impulses DOUBLE PRECISION NOT NULL
 );
+
+CREATE TABLE apu_failures (
+    event_id SERIAL PRIMARY KEY,
+    start_time TIMESTAMP,
+    end_time TIMESTAMP,
+    duration_minutes INT,
+    severity VARCHAR(10)
+);
+
 
 
 COMMIT;
