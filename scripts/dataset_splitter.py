@@ -35,7 +35,7 @@ def split_csv(input_file, max_file_size_mb=90, chunk_size=10000):
             output_file = f'../data/dataset.part{current_part}.csv'
             df_accumulated.to_csv(output_file, index=False)
             print(f'Written {output_file} of size {size_in_mb:.2f} MB')
-            
+
             # Reset the DataFrame and increment file part counter
             df_accumulated = pd.DataFrame()
             current_part += 1
