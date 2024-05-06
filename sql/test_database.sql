@@ -1,2 +1,1 @@
-
-SELECT * FROM dataset LIMIT 10;
+SELECT * FROM dataset LIMIT 3;
