@@ -8,5 +8,9 @@
 #unzip data/data.zip -d data/
 
 # rm data/data.zip
-mv "data/MetroPT3(AirCompressor).csv" data/MetroPT3.csv
+# mv "data/MetroPT3(AirCompressor).csv" data/MetroPT3.csv
+
+# cd data-preprocessing && python3 dataset_splitter.py
+echo "Removing the original dataset file ..."
+rm data/MetroPT3.csv
 
