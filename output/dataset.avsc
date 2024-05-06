@@ -1,0 +1,109 @@
+{
+  "type" : "record",
+  "name" : "dataset",
+  "doc" : "Sqoop import of dataset",
+  "fields" : [ {
+    "name" : "index",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "index",
+    "sqlType" : "4"
+  }, {
+    "name" : "timestamp",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "timestamp",
+    "sqlType" : "12"
+  }, {
+    "name" : "tp2",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "tp2",
+    "sqlType" : "8"
+  }, {
+    "name" : "tp3",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "tp3",
+    "sqlType" : "8"
+  }, {
+    "name" : "h1",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "h1",
+    "sqlType" : "8"
+  }, {
+    "name" : "dv_pressure",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "dv_pressure",
+    "sqlType" : "8"
+  }, {
+    "name" : "reservoirs",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "reservoirs",
+    "sqlType" : "8"
+  }, {
+    "name" : "oil_temperature",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "oil_temperature",
+    "sqlType" : "8"
+  }, {
+    "name" : "motor_current",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "motor_current",
+    "sqlType" : "8"
+  }, {
+    "name" : "comp",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "comp",
+    "sqlType" : "8"
+  }, {
+    "name" : "dv_eletric",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "dv_eletric",
+    "sqlType" : "8"
+  }, {
+    "name" : "towers",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "towers",
+    "sqlType" : "8"
+  }, {
+    "name" : "mpg",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "mpg",
+    "sqlType" : "8"
+  }, {
+    "name" : "lps",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "lps",
+    "sqlType" : "8"
+  }, {
+    "name" : "pressure_switch",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "pressure_switch",
+    "sqlType" : "8"
+  }, {
+    "name" : "oil_level",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "oil_level",
+    "sqlType" : "8"
+  }, {
+    "name" : "caudal_impulses",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "caudal_impulses",
+    "sqlType" : "8"
+  } ],
+  "tableName" : "dataset"
+}
