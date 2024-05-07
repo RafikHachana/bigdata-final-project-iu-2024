@@ -1,7 +1,6 @@
 START TRANSACTION;
 
 DROP TABLE IF EXISTS sensor_readings;
-DROP TABLE IF EXISTS dataset;
 DROP TABLE IF EXISTS apu_failures;
 
 
