@@ -28,3 +28,6 @@ echo "Copying data from postgres to HDFS ..."
 hdfs dfs -rm -r '/user/team3/project/warehouse/*'
 sqoop import-all-tables --connect jdbc:postgresql://hadoop-04.uni.innopolis.ru/team3_projectdb --username team3 --password $password --compression-codec=snappy --compress --as-avrodatafile --warehouse-dir=project/warehouse --m 1
 
+mv *.avsc output/
+mv *.java output/
+
